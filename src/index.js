@@ -1,1 +1,2 @@
-import "../static/css/main.css"
+import '../static/css/main.css';
+console.log("index")

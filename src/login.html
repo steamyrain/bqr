@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="h-screen bg-blue-400 flex flex-col justify-center items-center">
+      <div class="flex flex-col space-y-5 bg-yellow-400 w-min rounded-xl shadow-lg p-5">
+        <div class="mx-auto">
+          <h1 class="font-mono text-2xl text-center">Login</h1>
+        </div>
+        <div>
+          <form id="login">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

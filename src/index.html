@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <script src="main.js"></script>
   </head>
   <body>
-    <div class="h-screen bg-white flex flex-col space-y-10 justify-center items-center">
-      <div class="p-8 max-w-m mx-auto bg-white rounded-m shadow-md space-y-2">
-        <form id="form-input-image" name="form-input-image">
-          <input type="file" accept="image/*" capture="environment">
-        </form>
+    <div class="h-screen bg-blue-400 flex flex-col justify-center items-center">
+      <div class="flex flex-col space-y-5 bg-yellow-400 w-min rounded-xl shadow-lg p-5">
+        <div class="mx-auto">
+          <h1 class="font-mono text-2xl text-center">Binamarga Quick Response</h1>
+        </div>
+        <div class="flex flex-col space-y-5">
+          <button 
+            class="bg-yellow-300 rounded-xl shadow-sm hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-black active:bg-yellow-500"
+            onclick="window.location.assign(`login`)"
+            ><p class="font-mono">Login</p></button>
+          <button 
+            class="bg-yellow-300 rounded-xl shadow-sm hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-black active:bg-yellow-500"
+            onclick="window.location.assign(`signup`)"
+            ><p class="font-mono">Sign Up</p></button>
+        </div>
       </div>
     </div>
-    <script src="bundle.js">
   </body>
 </html>
