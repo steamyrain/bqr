@@ -8,19 +8,63 @@
   </head>
   <body>
     <div class="h-screen bg-blue-400 flex flex-col justify-center items-center">
-      <div class="flex flex-col space-y-5 bg-yellow-400 w-min rounded-xl shadow-lg p-5">
-        <div class="mx-auto">
-          <h1 class="font-mono text-2xl text-center">Sign Up</h1>
+      <div class="flex flex-col space-y-5 bg-yellow-200 w-min rounded-xl shadow-2xl px-16 pt-4 pb-8">
+        <div class="flex flex-col justify-center items-center">
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.8333 23.1663V16.8663C26.5221 15.2329 24.7333 12.1063 20.0666 12.6663" stroke="#FAA41A" stroke-width="2"/>
+            <path d="M27.7665 24.7333C25.4332 25.1222 20.3465 25.1067 18.6665 21.9333" stroke="#FAA41A" stroke-width="2"/>
+            <path d="M7.93311 23.1663V16.8663C8.24422 15.2329 10.0331 12.1063 14.6998 12.6663" stroke="#3475BA" stroke-width="2"/>
+            <path d="M17.4999 19.1333C17.2666 21.6222 14.9332 26.2733 7.46655 24.9667" stroke="#3475BA" stroke-width="2"/>
+            <path d="M17.5 6.53333V17.7333" stroke="#3475BA" stroke-width="2"/>
+            <circle cx="17.5" cy="17.5" r="16.5" stroke="#A25531" stroke-width="2"/>
+          </svg>
+          <h1 class="font-sans text-lg text-center font-medium">Binamarga<br>Quick<br>Response</h1>
         </div>
         <div>
           <form id="formSignUp">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
-            <label for="password2">password</label>
-            <input type="password" name="password2" id="password2">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="submit">Sign Up</button>
+            <div class="mb-4">
+              <label for="email">email</label>
+              <input 
+                class="appearance-none border border-transparent rounded-full focus:ring-1 focus:ring-blue-700"
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="mail@service.com"
+                required=true
+              >
+            </div>
+            <div class="mb-4">
+              <label for="password">password</label>
+              <input 
+                class="appearance-none border border-transparent rounded-full focus:ring-1 focus:ring-blue-700"
+                type="password" 
+                name="password" 
+                id="password"
+                placeholder="***********"
+                required=true
+              >
+            </div>
+            <div class="mb-6">
+              <label for="password2">password</label>
+              <input 
+                class="appearance-none border border-transparent rounded-full focus:ring-1 focus:ring-blue-700"
+                type="password" 
+                name="password2" 
+                id="password2"
+                placeholder="***********"
+                required=true
+              >
+            </div>
+            <div class="flex items-center justify-between">
+            <button 
+              class="transition duration-50 ease-in bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none active:bg-blue-700 py-2 px-4 text-white" 
+              type="submit" 
+              value="submit"
+            >
+              Sign Up
+            </button>
+            <a class="transition duration-50 ease-in text-xs text-blue-600 hover:underline hover:text-blue-700" href="login">have an account?</a>
+            <div>
           </form>
         </div>
       </div>

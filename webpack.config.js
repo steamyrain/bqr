@@ -9,6 +9,7 @@ module.exports = {
         main: ["./src/index.js"],
         login: ["./src/login.js"],
         signup: ["./src/signup.js"],
+        home: ["./src/home.js"],
     },
     output: {
         path: path.resolve(__dirname,"./dist"),
@@ -77,6 +78,6 @@ module.exports = {
         watchContentBase: true,
         contentBase: path.resolve(__dirname,"./dist"),
         open: true,
-        host: '0.0.0.0',
+        host: 'localhost',
     }
 };

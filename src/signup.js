@@ -1,5 +1,5 @@
 import "../static/css/main.css";
-import axios from "axios";
+import axios from 'axios';
 
 async function signUp(){
     // get form values
@@ -15,10 +15,11 @@ async function signUp(){
     }
 
     try {
-        const response = await axios.post("http://localhost:3030/public/register",userData)
-        console.log(response)
+        await axios.post('http://localhost:3030/public/register',userData,{withCredentials:true});
     } catch (error) {
-        console.log(error)
+        console.log(error);
+    } finally {
+        window.location.assign('login');
     }
 }
 
